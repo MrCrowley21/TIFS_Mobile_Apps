@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|center_horizontal"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:text="Selecteaza activitatea preferata!"
+        android:textColor="#A61B1B"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <CheckBox
+        android:id="@+id/chkJocul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="100dp"
+        android:text="Jocul"
+        android:onClick="onCheckboxClicked"/>
+    <CheckBox
+        android:id="@+id/chkbucataria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginLeft="100dp"
+        android:text="Bucataria"
+        android:onClick="onCheckboxClicked"/>
+    <CheckBox
+        android:id="@+id/chkmuzica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginLeft="100dp"
+        android:text="Muzica"
+        android:onClick="onCheckboxClicked"/>
+    <CheckBox
+        android:id="@+id/chkdesenul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginLeft="100dp"
+        android:text="Desenul"
+        android:onClick="onCheckboxClicked"/>
+    <Button
+        android:id="@+id/getBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:text="Optiuni selectate:" />
+</LinearLayout>

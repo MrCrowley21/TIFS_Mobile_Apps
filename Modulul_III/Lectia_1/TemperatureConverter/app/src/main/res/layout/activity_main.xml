@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+    <EditText
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:lines="1"
+        android:id="@+id/TextInput"
+        android:layout_width="fill_parent"
+        android:hint="Temperature"
+        android:inputType="numberDecimal"
+        >
+    </EditText>
+    <RadioGroup
+        android:id="@+id/RadioGroup01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="În Celsius"
+            android:id="@+id/CelsiusButton"
+            >
+        </RadioButton>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/FahrenheitButton"
+            android:text="În Fahrenheit"
+            android:textSize="16sp"
+            >
+        </RadioButton>
+    </RadioGroup>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="Calculate"
+        android:id="@+id/CalculateButton"
+        >
+    </Button>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/TextOutput"
+        android:textSize="16sp"
+        >
+    </TextView>
+</LinearLayout>
